@@ -19,7 +19,7 @@ export class FilteredmoviesService {
 
     const t$ = of(...filteredmovies).pipe(
       map(x => {
-        return this.http.get <Movie>(`http://www.omdbapi.com/?i=${x['imdbID']}&apikey=434339bc`)
+        return this.http.get <Movie>(`https://www.omdbapi.com/?i=${x['imdbID']}&apikey=434339bc`)
       }),
     )
 
