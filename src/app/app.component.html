@@ -1,0 +1,4 @@
+<div class="main-app">
+  <app-decade [movies]="movies" (clearEvt)="clearFilters($event)" (durationEvt)="calcDecade($event)"></app-decade>
+  <app-movie-detail [allMovies]="allMovies" [filteredMovies]="filteredMovies"></app-movie-detail>
+</div>

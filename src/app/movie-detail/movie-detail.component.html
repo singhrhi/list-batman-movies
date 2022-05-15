@@ -1,0 +1,25 @@
+<div id="err" *ngIf="!nmovies">OOPS ! Some Error occured. Please try after some time.</div>
+
+<div *ngIf="nmovies">
+    <div *ngFor="let i of (cmovies ? fObs$ : aObs$) | async" class="movie-list">
+        <div class="movie-list--display">
+            <div class="movie-list__poster--image" [ngStyle]="{'background-image': 'url(' + i.Poster + ')'}" ></div>
+            
+            <div  class="movie-list__card">
+                <h1 class="movie-list__card__title--margin">{{i.Title}}</h1>
+
+                <hr class="movie-list__card__line--border">
+        
+                <div class="movie-list__card__info--display">
+                    <button class="movie-list__card__info_button--text-color">{{i.Rated}}</button>
+                    <div class="movie-list__card__info_button--rtime-margin">{{i.Runtime}}</div>
+                    <div class="movie-list__card__info_button--rel-margin">{{i.Released}}</div>
+                </div>
+
+                <p>{{i.Plot}}</p>
+
+                <button class="movie-list__card__imdb-btn--style">View on IMDB</button>
+            </div>
+        </div>
+    </div>
+</div>

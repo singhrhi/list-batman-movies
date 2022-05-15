@@ -1,0 +1,48 @@
+$bg-color: rgb(87, 114, 238);
+$txt-color: white;
+$border-radius: .5em;
+
+.btn-group {
+    display: flex;
+    background-color: white;
+    border: none;
+    color: gray;
+    cursor: pointer;
+    height: 3em;
+    margin-bottom: 1em;
+    #b1{
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+        width: 100px;
+    }
+    #b2{
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+        width: 100px;
+    }
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none;
+}
+
+.btn-group #b1:hover,
+.btn-group #b2:hover {
+    background-color: $bg-color;
+    color:white
+}
+
+.btn--blu{
+  background-color: $bg-color;
+  color:white
+}
+
+.btn--white{
+  background-color: $txt-color;
+  color: gray
+}
+
+.anc--clear{
+  margin-bottom: 0.5em; 
+  text-align: end;
+}

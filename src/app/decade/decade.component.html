@@ -1,0 +1,7 @@
+<div *ngIf="isFiltered && (isFiltered.t || isFiltered.n)" class="anc--clear">
+    <a id="an" href="#" (click)="clearFilters()">clear filter</a>
+</div>
+<div class="btn-group">
+    <button [ngClass]=" {'btn--blu': isFiltered && isFiltered.t, 'btn--white': isFiltered && !isFiltered.t } " (click)="tDecade()" id="b1">2000's</button>
+    <button [ngClass]="{'btn--blu': isFiltered && isFiltered.n, 'btn--white': isFiltered && !isFiltered.n }" (click)="nDecade()" id="b2">1999's</button>
+</div>

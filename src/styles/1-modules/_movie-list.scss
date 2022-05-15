@@ -1,0 +1,64 @@
+.movie-list{
+    margin-bottom:.5em;
+    border:3px solid black;
+    border-radius: .6em;
+    padding:1em;
+    background-color: #eeeeee; 
+    height: 16em;
+    width: 44em;
+}
+
+.movie-list--display{
+    display:flex
+}
+
+.movie-list__poster--image{
+    background-size:cover;
+    height:13em;
+    min-width:9em;
+    border-radius: .5em;;
+}
+
+.movie-list__card{
+    position: relative;
+    margin-left: 1.5em;
+    height:13em
+}
+
+.movie-list__card__title--margin{
+    margin-top: 0;
+    margin-bottom: .2em
+}
+
+.movie-list__card__line--border{
+    border-top: 2px solid gray;
+}
+
+.movie-list__card__info--display{
+    display: flex;
+}
+
+.movie-list__card__info_button--text-color{
+    color:gray;
+}
+
+.movie-list__card__info_button--rtime-margin{
+    margin-left: 1em;
+}
+
+.movie-list__card__info_button--rel-margin{
+    margin-left: auto;
+}
+
+.movie-list__card__imdb-btn--style{
+    position: absolute;
+    float: right;
+    top: 13.4em;
+    right: 0.2em;
+    width: 15em;
+    height: 2.7em;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 0.5em;
+}
